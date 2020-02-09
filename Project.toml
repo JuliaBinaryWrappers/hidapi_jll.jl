@@ -1,0 +1,11 @@
+name = "hidapi_jll"
+uuid = "fc16ec7e-3cba-5ca4-a17a-1acd8165bbee"
+version = "0.9.0+0"
+
+[deps]
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+libusb_jll = "a877fdc9-fe69-5ed6-b93d-11ecd0dc2d49"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+
+[compat]
+julia = "1.0"
