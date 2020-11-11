@@ -1,105 +1,107 @@
 [[hidapi]]
 arch = "aarch64"
-git-tree-sha1 = "cb8506271f3117214eda10f060ff45ad1725b628"
+git-tree-sha1 = "508fb4753eb72e54be835585e82fb5dd7ab05438"
+libc = "glibc"
+os = "linux"
+
+    [[hidapi.download]]
+    sha256 = "7fdce105694aea390a481da6fc269c515861501aa965ebe001a930365169e7cb"
+    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.10.0+0/hidapi.v0.10.0.aarch64-linux-gnu.tar.gz"
+[[hidapi]]
+arch = "aarch64"
+git-tree-sha1 = "b331345d170d454cd45b5d030a83f0f1fa2ee82d"
 libc = "musl"
 os = "linux"
 
     [[hidapi.download]]
-    sha256 = "057e5fbef6ce901c7c39350e681735ebdbf8970f1cb99a135b058b3f1203c5f6"
-    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.9.0+0/hidapi.v0.9.0.aarch64-linux-musl.tar.gz"
+    sha256 = "c83ba7745e83db8b2296cfd9b19b1937d192c807215aa9a7e0e056dc44d2d5a4"
+    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.10.0+0/hidapi.v0.10.0.aarch64-linux-musl.tar.gz"
+[[hidapi]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "6073e91f2927c85f895a2a1e91fbf5eb2f9444f3"
+libc = "glibc"
+os = "linux"
+
+    [[hidapi.download]]
+    sha256 = "d2d7cccad7a0a422d96688a929280156501ebf6ca42c97ee11a2cbe7a103cb9c"
+    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.10.0+0/hidapi.v0.10.0.armv7l-linux-gnueabihf.tar.gz"
+[[hidapi]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "af74e4d017f1979e1cf8915817cda98c5754e3fa"
+libc = "musl"
+os = "linux"
+
+    [[hidapi.download]]
+    sha256 = "3e44303596213cfed3df7343967fb1bca98cc31cb452581352847104f998f623"
+    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.10.0+0/hidapi.v0.10.0.armv7l-linux-musleabihf.tar.gz"
 [[hidapi]]
 arch = "i686"
-git-tree-sha1 = "9760a60d3c40feae0c5db43fe9f1af6e4af4a7e5"
+git-tree-sha1 = "bad57441ebbeee1cde4a8e103a8195186f96a8aa"
+libc = "glibc"
+os = "linux"
+
+    [[hidapi.download]]
+    sha256 = "963a79df42527ca7884b024854f3d7debb7d3e196e6cc906dd1f900fed7a5fd0"
+    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.10.0+0/hidapi.v0.10.0.i686-linux-gnu.tar.gz"
+[[hidapi]]
+arch = "i686"
+git-tree-sha1 = "ffbeaa2805ff29ea2638ac97f461979e51e9482f"
+libc = "musl"
+os = "linux"
+
+    [[hidapi.download]]
+    sha256 = "8828b272b12627ff738c20141425d4054701704d7111a52d7908a68b176dc87f"
+    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.10.0+0/hidapi.v0.10.0.i686-linux-musl.tar.gz"
+[[hidapi]]
+arch = "i686"
+git-tree-sha1 = "bf9ef0580652868b90213081b7a1cbc7bc8fc129"
 os = "windows"
 
     [[hidapi.download]]
-    sha256 = "8dcf400da9b8aef81092dcbf05c16cec08d1e09be3cb3f3921e219f5c94a0749"
-    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.9.0+0/hidapi.v0.9.0.i686-w64-mingw32.tar.gz"
-[[hidapi]]
-arch = "x86_64"
-git-tree-sha1 = "b169aabc4a368be30c48a2bedd4c60e5cb139deb"
-libc = "musl"
-os = "linux"
-
-    [[hidapi.download]]
-    sha256 = "bf9d9e55c1412cf6007f1f90413d354a32d9d7f04c37a81b595b6b12c9c721ed"
-    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.9.0+0/hidapi.v0.9.0.x86_64-linux-musl.tar.gz"
-[[hidapi]]
-arch = "i686"
-git-tree-sha1 = "bf278f69587ac3dc4d123f3b8968921fb5a59e8b"
-libc = "glibc"
-os = "linux"
-
-    [[hidapi.download]]
-    sha256 = "8ebed796abe5c549b809e155629e8cbc460c0e0aad75e99bd92992c1a770053e"
-    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.9.0+0/hidapi.v0.9.0.i686-linux-gnu.tar.gz"
-[[hidapi]]
-arch = "armv7l"
-git-tree-sha1 = "a67c309c5819ac57a96d6ccbf527d58f8f735892"
-libc = "glibc"
-os = "linux"
-
-    [[hidapi.download]]
-    sha256 = "5d42aacc71b82400096138cdc79e473b7a1baca0a8ae708c4a5ebd3ee3d0d3e6"
-    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.9.0+0/hidapi.v0.9.0.armv7l-linux-gnueabihf.tar.gz"
-[[hidapi]]
-arch = "aarch64"
-git-tree-sha1 = "fef817a6a76d57990c69ca74db3186b84b82afd2"
-libc = "glibc"
-os = "linux"
-
-    [[hidapi.download]]
-    sha256 = "042eee40a200be8b12bc4b55e5514bee0c32b0e0ff5947b704f0f7a3fa0f6a02"
-    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.9.0+0/hidapi.v0.9.0.aarch64-linux-gnu.tar.gz"
-[[hidapi]]
-arch = "x86_64"
-git-tree-sha1 = "e9b61d32a5f5bbd74bfaca8a0c8f70252c821b9c"
-libc = "glibc"
-os = "linux"
-
-    [[hidapi.download]]
-    sha256 = "266865fe996f0dbc38f42d49fdb010546eea3a18fb15dda75ee35a4dec335d3d"
-    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.9.0+0/hidapi.v0.9.0.x86_64-linux-gnu.tar.gz"
+    sha256 = "282493e7ba9ce7752bb58ec38e927a7ac32e7e976d638b5fafad6a76f9d47784"
+    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.10.0+0/hidapi.v0.10.0.i686-w64-mingw32.tar.gz"
 [[hidapi]]
 arch = "powerpc64le"
-git-tree-sha1 = "d62258bd47903515acb5262bf449c112cafa45a1"
+git-tree-sha1 = "73ed1c8e5421166f4d32605972856d1c207a226d"
 libc = "glibc"
 os = "linux"
 
     [[hidapi.download]]
-    sha256 = "2249020263b8d20b1b6755a6af1ab3c1acdc515377d8cf6044379bd9cedd0098"
-    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.9.0+0/hidapi.v0.9.0.powerpc64le-linux-gnu.tar.gz"
+    sha256 = "7e43898eb917f68a303b22e858f16abed1d364e0bf7e576738a2a8f5cd52aa3f"
+    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.10.0+0/hidapi.v0.10.0.powerpc64le-linux-gnu.tar.gz"
 [[hidapi]]
 arch = "x86_64"
-git-tree-sha1 = "45a10682cde467895adc473d79a64fd3df61f2ea"
+git-tree-sha1 = "0e2fcadf567aba1632e9d634af225a9aecef916e"
 os = "macos"
 
     [[hidapi.download]]
-    sha256 = "bb98499d9a35eaa067d8380f21812f68c0d8d4b6a58bc4c0452a36b54a8574e8"
-    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.9.0+0/hidapi.v0.9.0.x86_64-apple-darwin14.tar.gz"
-[[hidapi]]
-arch = "i686"
-git-tree-sha1 = "1e350f8084f307bf4beaae4ca1fb957e58d96522"
-libc = "musl"
-os = "linux"
-
-    [[hidapi.download]]
-    sha256 = "07e5d091bb878dd1099db45ce2332c5154aa19d1156fe215d437448925766277"
-    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.9.0+0/hidapi.v0.9.0.i686-linux-musl.tar.gz"
-[[hidapi]]
-arch = "armv7l"
-git-tree-sha1 = "e5d78b80332b1736a1f241379d2ddd07b5997a8f"
-libc = "musl"
-os = "linux"
-
-    [[hidapi.download]]
-    sha256 = "9a7b0c030d381e915dad3f7681c7d3253922dc0a747e5a19fb688b42f4469260"
-    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.9.0+0/hidapi.v0.9.0.armv7l-linux-musleabihf.tar.gz"
+    sha256 = "9ee61e8fc9383c8e3f278366655a03ae9f165713f73cbd1f7cd2a8b50ed295e3"
+    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.10.0+0/hidapi.v0.10.0.x86_64-apple-darwin.tar.gz"
 [[hidapi]]
 arch = "x86_64"
-git-tree-sha1 = "d0608b8ef945462f439abdd045bc8fc167460a67"
+git-tree-sha1 = "44cca4f564e17c93e48fb1da7f9e00c73ae83431"
+libc = "glibc"
+os = "linux"
+
+    [[hidapi.download]]
+    sha256 = "5101e810ff3daff397b031c04c23b9c383ddc196d7cea0becaa2a0ee74fe548c"
+    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.10.0+0/hidapi.v0.10.0.x86_64-linux-gnu.tar.gz"
+[[hidapi]]
+arch = "x86_64"
+git-tree-sha1 = "b52c29d9307f96e34f9014a64d2a9683b14a1e05"
+libc = "musl"
+os = "linux"
+
+    [[hidapi.download]]
+    sha256 = "a93a54e7992481bc733ee9b948d4c194979d485c41d168a328a436a8cb296f89"
+    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.10.0+0/hidapi.v0.10.0.x86_64-linux-musl.tar.gz"
+[[hidapi]]
+arch = "x86_64"
+git-tree-sha1 = "b0796f0ea451f89ab96fcf99654ae9e0ea2e3f96"
 os = "windows"
 
     [[hidapi.download]]
-    sha256 = "11374c58fa3741f68b09e7dfb572f9059afaf742b85fd4b14cfdde837d8c9aa8"
-    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.9.0+0/hidapi.v0.9.0.x86_64-w64-mingw32.tar.gz"
+    sha256 = "50332ad0084baaeb9177a6c19cfb0c9fdda8684a130a35d7b121400be87f0621"
+    url = "https://github.com/JuliaBinaryWrappers/hidapi_jll.jl/releases/download/hidapi-v0.10.0+0/hidapi.v0.10.0.x86_64-w64-mingw32.tar.gz"

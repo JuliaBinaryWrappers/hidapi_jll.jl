@@ -2,57 +2,15 @@
 export hidapi
 
 using libusb_jll
-## Global variables
-PATH = ""
-LIBPATH = ""
-LIBPATH_env = "PATH"
-
-# Relative path to `hidapi`
-const hidapi_splitpath = ["bin", "libhidapi-0.dll"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-hidapi_path = ""
-
-# hidapi-specific global declaration
-# This will be filled out by __init__()
-hidapi_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const hidapi = "libhidapi-0.dll"
-
-
-"""
-Open all libraries
-"""
+JLLWrappers.@generate_wrapper_header("hidapi")
+JLLWrappers.@declare_library_product(hidapi, "libhidapi-0.dll")
 function __init__()
-    global artifact_dir = abspath(artifact"hidapi")
+    JLLWrappers.@generate_init_header(libusb_jll)
+    JLLWrappers.@init_library_product(
+        hidapi,
+        "bin\\libhidapi-0.dll",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    # Initialize PATH and LIBPATH environment variable listings
-    global PATH_list, LIBPATH_list
-    # We first need to add to LIBPATH_list the libraries provided by Julia
-    append!(LIBPATH_list, [Sys.BINDIR, joinpath(Sys.BINDIR, Base.LIBDIR, "julia"), joinpath(Sys.BINDIR, Base.LIBDIR)])
-    # From the list of our dependencies, generate a tuple of all the PATH and LIBPATH lists,
-    # then append them to our own.
-    foreach(p -> append!(PATH_list, p), (libusb_jll.PATH_list,))
-    foreach(p -> append!(LIBPATH_list, p), (libusb_jll.LIBPATH_list,))
-
-    global hidapi_path = normpath(joinpath(artifact_dir, hidapi_splitpath...))
-
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global hidapi_handle = dlopen(hidapi_path)
-    push!(LIBPATH_list, dirname(hidapi_path))
-
-    # Filter out duplicate and empty entries in our PATH and LIBPATH entries
-    filter!(!isempty, unique!(PATH_list))
-    filter!(!isempty, unique!(LIBPATH_list))
-    global PATH = join(PATH_list, ';')
-    global LIBPATH = join(LIBPATH_list, ';')
-
-    # Add each element of LIBPATH to our DL_LOAD_PATH (necessary on platforms
-    # that don't honor our "already opened" trick)
-    #for lp in LIBPATH_list
-    #    push!(DL_LOAD_PATH, lp)
-    #end
+    JLLWrappers.@generate_init_footer()
 end  # __init__()
-
