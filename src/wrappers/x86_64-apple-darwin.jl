@@ -7,7 +7,7 @@ function __init__()
     JLLWrappers.@generate_init_header()
     JLLWrappers.@init_library_product(
         hidapi,
-        "lib/libhidapi.0.13.1.dylib",
+        "lib/libhidapi.0.14.0.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
